@@ -16,7 +16,8 @@ class CarManager(Turtle):
     def create_car(self):
         chance = random.randint(1,6)
         if chance == 1:
-            new_car = Turtle("square")
+            new_car = Turtle()
+            new_car.shape("square")
             new_car.shapesize(1,2)
             new_car.color(random.choice(COLORS))
             new_car.penup()

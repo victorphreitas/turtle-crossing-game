@@ -3,11 +3,18 @@ import time
 from player import Player
 from car_manager import CarManager
 from scoreboard import Scoreboard
+from road import Road
 
 # screen
 screen = Screen()
 screen.setup(600,600)
 screen.tracer(0)
+screen.bgcolor("black")
+
+# road
+road_manager = Road()
+road_manager.make_road()
+road_manager.side_walk()
 
 # player
 player = Player()
